@@ -1,0 +1,40 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  transition: all .3s linear;
+  font-family: Avenir, sans-serif;
+}
+@font-face {
+  src: url("../Font/Avenir.ttc");
+  font-family: Avenir;
+}
+body {
+  position: relative;
+}
+img {
+  width: 100%;
+}
+.clear {
+  clear: both;
+}
+.title-wrapper {
+  background: #fff;
+  padding-top: 68px;
+  padding-bottom: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  div {
+    border-bottom: 3px solid #E70014;
+    padding: 10px;
+
+    h3 {
+      letter-spacing: 5px;
+    }
+  }
+
+}

@@ -1,0 +1,432 @@
+@import '_base';
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#splash {
+    background-image: url("../images/TS7010-fundotopo-TCL-Soundbar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    .splash-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 150px 40px;
+        color: white;
+        width: 100%;
+        #splash-content-logo {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        #splash-content-soundbar {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-weight: bolder;
+            font-family: Avenir, sans-serif;
+            margin-bottom: 30px;
+        }
+        p {
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+}
+
+
+/******** wireless ********/
+
+#wireless {
+    position: relative;
+    background: #fff;
+    #wireless-content {
+        position: relative;
+        .gray-background {
+            background-image: url("../images/TS7010-fundocinzaclaro-Soundbar.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            .gb-content {
+                padding: 45px;
+                span {
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+                p {
+                    margin-top: 12px;
+                }
+                img {
+                    max-width: 50px;
+                    margin-bottom: 1px;
+                }
+            }
+        }
+        #subwoofer {
+            background: #ECECEC;
+            margin-top: -5px
+        }
+    }
+}
+
+
+/******** watts ********/
+
+#watts {
+    background-image: url("../images/TS7010-fundocinzaescuro-TCL-Soundbar.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    color: white;
+    .watts-content {
+        padding: 50px 20px;
+        img {
+            margin-top: 80px;
+        }
+        .texts {
+            max-width: 210px;
+            text-align: left;
+            position: absolute;
+            left: 45%;
+            span {
+                font-size: 22px;
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+.c-content-boxes {
+    display: flex;
+    flex-direction: column;
+    .box {
+        background: #EBEBEB;
+        border-radius: 20px;
+        position: relative;
+        padding: 45px;
+        margin: 20px;
+        flex-basis: 40%;
+        #box-hdmi {
+            position: relative;
+            right: -45px;
+        }
+        #box1-content {
+            img {
+                max-width: 50px;
+            }
+        }
+        #box2-content {
+            position: relative;
+            img {
+                width: 140px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+        #soundbar_with_effect {
+            position: relative;
+            right: -45px;
+        }
+        #cellphone {
+            display: none;
+        }
+        &:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+#design {
+    #design-bg {
+        background-image: url("../images/TS7010-fundocom-TV-TCL-Soundbar.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 25% center;
+        height: 600px;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 55px 40px 40px;
+        .design-bg-texts {
+            padding: 15px;
+            flex: 1 1 50%;
+            text-align: left;
+            color: #000;
+            display: none;
+            span {
+                font-size: 20px;
+                font-weight: 700;
+            }
+            p {
+                margin-top: 10px;
+            }
+        }
+        .spaceing {
+            flex: 1 1 50%;
+        }
+    }
+    .design-bg-texts-2 {
+        text-align: center;
+        background: #969E9F;
+        padding: 45px;
+        span {
+            font-size: 22px;
+            font-weight: bold;
+        }
+    }
+}
+
+#resources {
+    #resources-content {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-bottom: 200px;
+        .resource-item {
+            font-size: 14px;
+            padding: 0 25px;
+            text-transform: uppercase;
+            font-weight: 900;
+            display: flex;
+            flex: 1 1 50%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            img {
+                max-width: 50px;
+                margin-bottom: 10px;
+            }
+        }
+        #bluetooth {
+            img {
+                transform: scale(3);
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .wrapper {
+        max-width: 540px;
+    }
+    .title-wrapper {
+        h3 {
+            font-size: 22px;
+        }
+    }
+    #design {
+        #design-bg {
+            flex-direction: row;
+            padding: 40px;
+            .design-bg-texts {
+                p {
+                    margin-top: 10px;
+                    width: 350px;
+                }
+            }
+        }
+    }
+    #resources {
+        #resources-content {
+            .resource-item {
+                flex: 1 1 20%;
+                border-right: 1px solid #DEDEDE;
+            }
+            #resource-item-last {
+                border-right: none;
+            }
+            #bluetooth {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img {
+                    transform: scale(2.5);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 720px;
+    }
+    .splash-content {
+        #splash-content-logo {
+            max-width: 270px;
+        }
+        p {
+            font-size: 20px;
+            max-width: 470px;
+        }
+    }
+    #splash {
+        .splash-content {
+            #splash-content-logo {
+                max-width: 350px;
+            }
+            p {
+                max-width: 470px;
+                font-size: 16px;
+            }
+        }
+    }
+    .title-wrapper {
+        h3 {
+            font-size: 28px;
+        }
+    }
+    #watts {
+        .watts-content {
+            position: relative;
+            img {
+                margin-top: 80px;
+            }
+            .texts {
+                max-width: 210px;
+                text-align: left;
+                position: absolute;
+                left: 40%;
+                top: 120px;
+                span {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        max-width: 960px;
+    }
+    #splash {
+        padding: 0 100px 100px;
+        .splash-content {
+            p {
+                max-width: 470px;
+                font-size: 18px;
+            }
+            h2 {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    #wireless {
+        position: relative;
+        #wireless-content {
+            display: flex;
+            padding-left: 100px;
+            top: -80px;
+            .gray-background {
+                border-radius: 30px;
+                .gb-content {
+                    padding: 75px 150px 75px 75px;
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+            #subwoofer {
+                position: relative;
+                left: -50px;
+                top: 50px;
+                background: transparent;
+                img {
+                    transform: scale(1.7);
+                }
+            }
+        }
+    }
+    .title-wrapper {
+        h3 {
+            font-size: 34px;
+        }
+    }
+    .c-content-boxes {
+        flex-direction: row;
+        justify-content: space-between;
+        .box {
+            flex: 1 1 40%;
+            #cellphone {
+                display: block;
+                width: 150px;
+                position: absolute;
+                left: -40px;
+            }
+            &:nth-child(2) {
+                padding-left: 130px;
+            }
+        }
+    }
+    #design {
+        #design-bg {
+            flex-direction: row;
+            .design-bg-texts {
+                display: block;
+                padding-left: 140px;
+                padding-top: 50px;
+            }
+        }
+        .design-bg-texts-2 {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+        max-width: 1140px;
+    }
+    #watts {
+        .watts-content {
+            .texts {
+                max-width: 300px;
+                text-align: left;
+                position: absolute;
+                left: 40%;
+                top: 160px;
+            }
+        }
+    }
+    #wireless {
+        #wireless-content {
+            top: -120px;
+            .gray-background {
+                .gb-content {
+                    padding: 75px 150px 140px 75px;
+                }
+            }
+            #subwoofer {
+                position: relative;
+                left: -50px;
+                top: 50px;
+                img {
+                    transform: scale(1.7);
+                }
+            }
+        }
+    }
+    .title-wrapper {
+        h3 {
+            font-size: 38px;
+        }
+    }
+    #design-bg {
+        .design-bg-texts {
+            padding-top: 100px;
+            padding-left: 70px;
+        }
+    }
+}
